@@ -1,3 +1,8 @@
+name: Symfony CI/CD
+
+on:
+    push:
+        branches: ["main"]
 jobs:
     build-and-test:
         runs-on: ubuntu-latest
