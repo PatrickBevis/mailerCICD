@@ -15,3 +15,4 @@ class MailTest extends WebTestCase
         $this->assertEmailCount(1);
     }
 }
+# test 
