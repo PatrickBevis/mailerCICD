@@ -14,7 +14,7 @@ final class MailController extends AbstractController
     public function sendMail(MailerInterface $mailer): Response
     {
         $email =(new Email())
-        ->from('demo@example')
+        ->from('demo@example.com')
         ->to('test@example.com')
         ->subject('Bonjour depuis Symfony !')            
 		->text('Ceci est un email de test.')
