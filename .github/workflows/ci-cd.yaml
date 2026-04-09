@@ -48,5 +48,5 @@ jobs:
                   context: .
                   push: true
                   tags: |
-                      tonpseudo/mailer:latest
-                      tonpseudo/mailer:${{ github.sha }}
+                      ${{ secrets.DOCKERHUB_USERNAME }}/mailer:latest
+                      ${{ secrets.DOCKERHUB_USERNAME }}/mailer:${{ github.sha }}
